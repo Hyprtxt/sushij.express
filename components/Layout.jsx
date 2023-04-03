@@ -16,7 +16,7 @@ const SchemaORG = () => {
       "postalCode": "86314",
       "streetAddress": "7840 E. St, AZ-69",
     },
-    "name": "SushiJ Express",
+    "name": "Sushi J Express",
     "openingHours": [
       "Tu-Sa 11:00-14:30",
       "Tu-Sa 16:30-19:00",

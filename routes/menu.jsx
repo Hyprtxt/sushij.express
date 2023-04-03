@@ -6,11 +6,11 @@ export default function Showcase(props) {
   return (
     <>
       <Head>
-        <title>SushiJ Express | Menu</title>
+        <title>Sushi J Express | Menu</title>
         <meta name="author" content="Taylor Young" />
         <meta
           name="description"
-          content="The SushiJ Express Menu"
+          content="The Sushi J Express Menu"
         />
       </Head>
       <Layout data={props}>

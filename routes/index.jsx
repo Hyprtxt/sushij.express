@@ -54,7 +54,7 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>SushiJ Express | Good Sushi</title>
+        <title>Sushi J Express | Good Sushi</title>
         <meta
           name="description"
           content="A slice of Japan right here in Prescott Valley. Order today."

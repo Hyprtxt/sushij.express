@@ -15,7 +15,7 @@ export default function Footer({ children, active }) {
       title: "Community",
       children: [
         // { name: "GitHub", href: "https://github.com/hyprtxt" },
-        { name: "Facebook", href: "https://www.facebook.com/SushiJExpress/" },
+        { name: "Facebook", href: "https://www.facebook.com/Sushi JExpress/" },
       ],
     },
   ]
@@ -32,7 +32,7 @@ export default function Footer({ children, active }) {
             class="font-bold text-2xl"
             property="name"
           >
-            SushiJ Express
+            Sushi J Express
           </div>
         </div>
         <div>
