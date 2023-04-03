@@ -76,26 +76,8 @@ export default function Home(props) {
             <a href="#welcome">Hello</a>
           </h1>
           <p>
-            Simple and Fast websites can be very effective at getting your
-            message across. At Hyprtxt we use Deno JavaScript to program, test
-            and develop websites.
+            Very Good Sushi is found in Prescott Valley
           </p>
-        </section>
-        <section class="mx-auto max-w-screen-lg">
-          <Features items={featureItems} />
-        </section>
-        <section class="max-w-screen-lg mx-auto p-8 space-y-4 bg-white">
-          <h1 id="quality">
-            <a href="#quality">Quality Websites</a>
-          </h1>
-          <p>
-            Every Hyprtxt website shares some qualities. We use the best systems
-            available to provide snappy and delightful user experiences that
-            work on devices big or small.
-          </p>
-        </section>
-        <section class="mx-auto max-w-screen-lg">
-          <Features items={websiteFeatures} />
         </section>
       </Layout>
     </>

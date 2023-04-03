@@ -1,4 +1,4 @@
-import HyprtxtIcon from "@/components/HyprtxtIcon.jsx"
+// import HyprtxtIcon from "@/components/HyprtxtIcon.jsx"
 import BrandGithub from "$icons/brand-github.tsx"
 
 export default function Footer({ children, active }) {
@@ -7,14 +7,15 @@ export default function Footer({ children, active }) {
       title: "Pages",
       children: [
         { name: "Home", href: "/" },
-        { name: "Showcase", href: "/showcase" },
+        { name: "Menu", href: "/menu" },
+        // { name: "Order", href: "/order" },
       ],
     },
     {
       title: "Community",
       children: [
-        { name: "GitHub", href: "https://github.com/hyprtxt" },
-        { name: "Facebook", href: "https://www.facebook.com/hyprtxt" },
+        // { name: "GitHub", href: "https://github.com/hyprtxt" },
+        { name: "Facebook", href: "https://www.facebook.com/SushiJExpress/" },
       ],
     },
   ]
@@ -33,6 +34,11 @@ export default function Footer({ children, active }) {
           >
             SushiJ Express
           </div>
+        </div>
+        <div>
+          <a href="https://goo.gl/maps/V5GUNWqMwZ6JSoa98">
+            Location & Directions
+          </a>
         </div>
         <div property="telephone">
           <a href="tel:+19287759323">(928) 775-9323</a>
@@ -64,7 +70,7 @@ export default function Footer({ children, active }) {
           Coded in Arizona.
         </div>
         <a
-          href="https://github.com/hyprtxt/hyprtxt.deno.dev"
+          href="https://github.com/Hyprtxt/pvsushi.com"
           class="inline-block hover:text-black"
           aria-label="Github Icon"
         >
