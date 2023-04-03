@@ -13,10 +13,10 @@ export default function Page500(props) {
   return (
     <>
       <Head>
-        <title>Hyprtxt | Server Error</title>
+        <title>SushiJ Express | Server Error</title>
       </Head>
       <Layout data={props}>
-        <section class="max-w-screen-md mx-auto py-8 px(8) space-y-4 bg-white">
+        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white">
           <h2>
             500 Error
           </h2>

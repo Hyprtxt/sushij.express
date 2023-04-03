@@ -8,33 +8,26 @@ import { Head } from "$fresh/runtime.ts"
 const SchemaORG = () => {
   const Schema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://hyprtxt.dev/#organization",
-        "url": "https://hyprtxt.dev/",
-        "name": "Hyprtxt",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "https://hyprtxt.dev/#logo",
-          "url": "https://hyprtxt.dev/logo.png",
-        },
-        "sameAs": [
-          "https://github.com/Hyprtxt",
-          "https://www.facebook.com/Hyprtxt/",
-          "https://twitter.com/Hyprtxt",
-        ],
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://hyprtxt.dev/#website",
-        "url": "https://hyprtxt.dev/",
-        "name": "Hyprtxt.dev",
-        "publisher": {
-          "@id": "https://hyprtxt.dev/#organization",
-        },
-      },
+    "@type": "Restaurant",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Prescott Valley",
+      "addressRegion": "AZ",
+      "postalCode": "86314",
+      "streetAddress": "7840 E. St, AZ-69",
+    },
+    "name": "SushiJ Express",
+    "openingHours": [
+      "Tu-Sa 11:00-14:30",
+      "Tu-Sa 16:30-19:00",
     ],
+    "priceRange": "$$",
+    "servesCuisine": [
+      "Sushi",
+      "Japanese",
+    ],
+    "telephone": "(928) 775-9323",
+    "url": "https://pvsushi.com",
   }
   return (
     <script
@@ -60,7 +53,7 @@ const Layout = ({ children, data = {} }) => (
     </section>
     {DENO_ENV === "development"
       ? (
-        <section class="max-w-screen-md mx-auto py-8 px(8) space-y-4 bg-white">
+        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white">
           <pre>{JSON.stringify(data, null, 2 )}</pre>
         </section>
       )

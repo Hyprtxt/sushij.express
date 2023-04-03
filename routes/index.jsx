@@ -54,11 +54,10 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Hyprtxt | Good Websites</title>
-        <meta name="author" content="Taylor Young" />
+        <title>SushiJ Express | Good Sushi</title>
         <meta
           name="description"
-          content="Hyprtxt is Taylor's Brand. Webmaster for hire. Based in Prescott, AZ. Click on in!"
+          content="A slice of Japan right here in Prescott Valley. Order today."
         />
       </Head>
       <div class={tw`${homeStyles}`}></div>
@@ -72,7 +71,7 @@ export default function Home(props) {
         </div>
       </section>
       <Layout data={props}>
-        <section class="max-w-screen-md mx-auto p-8 space-y-4 bg-white">
+        <section class="max-w-screen-lg mx-auto p-8 space-y-4 bg-white">
           <h1 id="welcome">
             <a href="#welcome">Hello</a>
           </h1>
@@ -82,10 +81,10 @@ export default function Home(props) {
             and develop websites.
           </p>
         </section>
-        <section class="mx-auto max-w-screen-md">
+        <section class="mx-auto max-w-screen-lg">
           <Features items={featureItems} />
         </section>
-        <section class="max-w-screen-md mx-auto p-8 space-y-4 bg-white">
+        <section class="max-w-screen-lg mx-auto p-8 space-y-4 bg-white">
           <h1 id="quality">
             <a href="#quality">Quality Websites</a>
           </h1>
@@ -95,7 +94,7 @@ export default function Home(props) {
             work on devices big or small.
           </p>
         </section>
-        <section class="mx-auto max-w-screen-md">
+        <section class="mx-auto max-w-screen-lg">
           <Features items={websiteFeatures} />
         </section>
       </Layout>

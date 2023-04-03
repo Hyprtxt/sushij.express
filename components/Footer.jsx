@@ -20,32 +20,23 @@ export default function Footer({ children, active }) {
   ]
 
   return (
-    <div class="bg-white flex flex-col md:flex-row w-full max-w-screen-md gap-8 md:gap-16 px-8 py-8 text-sm mb-5">
+    <div class="bg-white flex flex-col md:flex-row w-full max-w-screen-lg gap-8 md:gap-16 px-8 py-8 text-sm mb-5">
       <div class="flex-1">
         <div
           class="flex items-center gap-1"
           vocab="https://schema.org/"
-          typeof="Organization"
+          typeof="Restaurant"
         >
-          <span property="logo">
-            <HyprtxtIcon clazz="h-5 w-5" />
-          </span>
           <div
             class="font-bold text-2xl"
             property="name"
           >
-            Hyprtxt
+            SushiJ Express
           </div>
         </div>
-        <div>
-          Webmaster for Hire
-        </div>
-        <div>
-          <a href="mailto:taylor@hyprtxt.dev">taylor@hyprtxt.dev</a>
-        </div>
-        <div>
-          <a href="tel:+12147993897">+1 214 799-3897</a>{" "}
-          (<a href="sms:+12147993897">sms</a>)
+        <div property="telephone">
+          <a href="tel:+19287759323">(928) 775-9323</a>
+          {" "}
         </div>
       </div>
 

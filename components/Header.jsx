@@ -1,17 +1,18 @@
-import HyprtxtIcon from "@/components/HyprtxtIcon.jsx"
+// import HyprtxtIcon from "@/components/HyprtxtIcon.jsx"
 
 export default function Header({ active }) {
   const menus = [
     { name: "Home", href: "/" },
-    { name: "Showcase", href: "/showcase" },
+    { name: "Menu", href: "/menu" },
+    { name: "Order", href: "/order" },
   ]
 
   return (
-    <header class="bg-white w-full max-w-screen-md py-6 px-8 flex flex-col md:flex-row gap-4">
+    <header class="bg-white w-full max-w-screen-lg py-6 px-8 flex flex-col md:flex-row gap-4">
       <div class="flex items-center flex-1">
-        <HyprtxtIcon />
+        {/* <HyprtxtIcon /> */}
         <div class="text-2xl  ml-1 font-bold">
-          Hyprtxt
+          SushiJ Express
         </div>
       </div>
       <ul class="flex items-center gap-6">
