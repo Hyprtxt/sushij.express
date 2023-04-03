@@ -10,9 +10,6 @@ const ENV = cleanEnv(RAW_ENV, {
   DENO_ENV: str({ choices: ["development", "testing", "production"] }),
   API_URL: url(),
   TOKEN: str(),
-  GOOGLE_MAPS_API_KEY: str(),
-  PORT: port(),
-  GTM_ID: str(),
 })
 
 export const {
@@ -20,9 +17,6 @@ export const {
   DENO_ENV,
   API_URL,
   TOKEN,
-  GOOGLE_MAPS_API_KEY,
-  PORT,
-  GTM_ID,
 } = ENV
 
 export default ENV
