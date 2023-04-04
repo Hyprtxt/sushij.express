@@ -63,7 +63,7 @@ export default function Home(props) {
       <div class={tw`${homeStyles}`}></div>
       <section class="landing-page">
         <div class="mx-auto">
-          <p class="my-8">Welcome 👋</p>
+          <p class="my-8">🍱 Welcome 🍣</p>
           <div class="logo"></div>
           <p class="tagline">
             本当に速いのウェブサイト
