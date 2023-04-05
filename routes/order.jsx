@@ -15,12 +15,9 @@ export default function Showcase(props) {
       </Head>
       <Layout data={props}>
         <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
-          <h1>
-            Order To Go
-          </h1>
-          <p>
-            Service Area
-          </p>
+          <h1>Order Today!</h1>
+          <p>We are Open.</p>
+          <p>We are not Open.</p>
         </section>
       </Layout>
     </>

@@ -44,6 +44,9 @@ export default function Footer({ children, active }) {
           <a href="tel:+19287759323">(928) 775-9323</a>
           {" "}
         </div>
+        <div>
+          open or closed?
+        </div>
       </div>
 
       {menus.map((item) => (
@@ -66,8 +69,8 @@ export default function Footer({ children, active }) {
 
       <div class="space-y-2">
         <div class="text-xs">
-          Copyright © Hyprtxt<br />
-          Coded in Arizona.
+          Copyright © Sushi J Express<br />
+          <a href="https://hyprtxt.dev">Coded</a> in Arizona.
         </div>
         <a
           href="https://github.com/Hyprtxt/pvsushi.com"

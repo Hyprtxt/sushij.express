@@ -64,9 +64,10 @@ export default function Home(props) {
       <section class="landing-page">
         <div class="mx-auto">
           <p class="my-8">🍱 Welcome 🍣</p>
-          <div class="logo"></div>
+          {/* <div class="logo"></div> */}
+          <h1 class="logo">Sushi J Express</h1>
           <p class="tagline">
-            本当に速いのウェブサイト
+            {/* 本当に速いのウェブサイト */}
           </p>
         </div>
       </section>

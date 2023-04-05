@@ -80,11 +80,11 @@ export const homeStyles = css({
   ":global": {
     ".logo": {
       "&": apply(animation("600ms ease-out 1", fadeIn)),
-      background: `url(${
-        asset("/hyprtxt_stack.webp")
-      }) no-repeat center center`,
+      // background: `url(${
+      //   asset("/hyprtxt_stack.webp")
+      // }) no-repeat center center`,
       width: "300px",
-      height: "304px",
+      // height: "304px",
       margin: "0 auto",
       backgroundSize: "cover",
     },
