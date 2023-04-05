@@ -1,7 +1,9 @@
 import { format } from "$std/datetime/mod.ts"
+import { time } from "time"
 
 export const isSushiOpen = () => {
-  const date = new Date()
+  console.log("Time now Phoenix: ", time().tz("America/Phoenix").t)
+  const date = new Date(time().tz("America/Phoenix").t)
   const time = format(date, "HHmm")
   // is not sunday or monday
   if (date.getDay() > 1) {
