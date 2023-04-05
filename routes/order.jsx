@@ -20,7 +20,9 @@ export default function Showcase(props) {
           <p class="text-2xl">
             <a href="tel:+19287759323">(928) 775-9323</a>
           </p>
-          {isSushiOpen() ? <p>We are Open.</p> : <p>We are not Open.</p>}
+          {isSushiOpen()
+            ? <p>We are Open.</p>
+            : <p>We are not Open right now, please come back later.</p>}
         </section>
       </Layout>
     </>
