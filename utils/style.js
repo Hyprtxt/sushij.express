@@ -67,7 +67,7 @@ export const globalStyles = css({
       "&::before": {
         "&": apply`d-block fixed w-full h-full -z-20 left-0 top-0`,
         content: `""`,
-        background: `url(${asset("/nebula.webp")}) no-repeat center center`,
+        background: `url(${asset("/background.webp")}) no-repeat center center`,
         backgroundSize: "cover",
       },
       backgroundColor: theme("colors.purple"),
