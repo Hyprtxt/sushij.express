@@ -3,6 +3,7 @@ import { format } from "$std/datetime/mod.ts"
 export const isSushiOpen = () => {
   const date = new Date()
   const time = format(date, "HHmm")
+  // Is not sunday or monday
   if (date.getDay() > 1) {
     // is 1100 - 1900
     if (time > 1059 && time < 1900) {
@@ -12,5 +13,6 @@ export const isSushiOpen = () => {
       }
       return true
     }
+    return false
   }
 }
