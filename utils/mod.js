@@ -2,15 +2,15 @@ import { format } from "$std/datetime/mod.ts"
 import { time } from "time"
 
 export const isSushiOpen = () => {
-  console.log("Time now Phoenix: ", time().tz("America/Phoenix").t)
-  const date = new Date(time().tz("America/Phoenix").t)
-  const time = format(date, "HHmm")
+  const now = time().tz("America/Phoenix").t
+  const date = new Date(now)
+  const current_time = format(date, "HHmm")
   // is not sunday or monday
   if (date.getDay() > 1) {
     // is 1100 - 1900
-    if (time > 1059 && time < 1900) {
+    if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630
-      if (time < 1429 && time > 1630) {
+      if (current_time < 1429 && current_time > 1630) {
         return false
       }
       return true
@@ -21,14 +21,16 @@ export const isSushiOpen = () => {
 }
 
 export const isSushiOpenPhrase = () => {
-  const date = new Date()
-  const time = format(date, "HHmm")
+  const now = time().tz("America/Phoenix").t
+  const date = new Date(now)
+  const current_time = format(date, "HHmm")
+  console.log(date, "DATE")
   // is not sunday or monday
   if (date.getDay() > 1) {
     // is 1100 - 1900
-    if (time > 1059 && time < 1900) {
+    if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630
-      if (time < 1429 && time > 1630) {
+      if (current_time < 1429 && current_time > 1630) {
         return "Closed until Dinner"
       }
       return "Now Open"
