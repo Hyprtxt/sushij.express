@@ -1,5 +1,5 @@
-// import HyprtxtIcon from "@/components/HyprtxtIcon.jsx"
 import BrandGithub from "$icons/brand-github.tsx"
+import { isSushiOpen } from "@/utils/mod.js"
 
 export default function Footer({ children, active }) {
   const menus = [
@@ -45,7 +45,7 @@ export default function Footer({ children, active }) {
           {" "}
         </div>
         <div>
-          open or closed?
+          {isSushiOpen() ? <p>We are open.</p> : <p>We are closed.</p>}
         </div>
       </div>
 
