@@ -38,7 +38,7 @@ export const globalStyles = css({
       color: theme("colors.indigo"),
       "&:visited": apply`text-violet`,
       "&:hover": apply`text-blue underline`,
-      "&:active": apply`text-green`,
+      "&:active": apply`text-red`,
     },
     "h1, h2, h3": {
       "&": apply`mb-3`,
@@ -70,7 +70,7 @@ export const globalStyles = css({
         background: `url(${asset("/background.webp")}) no-repeat center center`,
         backgroundSize: "cover",
       },
-      backgroundColor: theme("colors.purple"),
+      backgroundColor: theme("colors.blue"),
     },
     ".header-wrapper": apply`mt-5`,
   },
@@ -83,8 +83,9 @@ export const homeStyles = css({
       // background: `url(${
       //   asset("/hyprtxt_stack.webp")
       // }) no-repeat center center`,
-      width: "300px",
+      // width: "300px",
       // height: "304px",
+      padding: "2rem",
       margin: "0 auto",
       backgroundSize: "cover",
     },

@@ -65,7 +65,9 @@ export default function Home(props) {
         <div class="mx-auto">
           <p class="my-8">🍱 Welcome 🍣</p>
           {/* <div class="logo"></div> */}
-          <h1 class="logo">Sushi J Express</h1>
+          <h1 class="logo text-6xl">
+            Sushi <span class="text-red">J</span> Express
+          </h1>
           <p class="tagline">
             {/* 本当に速いのウェブサイト */}
           </p>

@@ -1,5 +1,5 @@
 import BrandGithub from "$icons/brand-github.tsx"
-import { isSushiOpen } from "@/utils/mod.js"
+import { isSushiOpenPhrase } from "@/utils/mod.js"
 
 export default function Footer({ children, active }) {
   const menus = [
@@ -32,7 +32,7 @@ export default function Footer({ children, active }) {
             class="font-bold text-2xl"
             property="name"
           >
-            Sushi J Express
+            Sushi <span class="text-red">J</span> Express
           </div>
         </div>
         <div>
@@ -45,7 +45,7 @@ export default function Footer({ children, active }) {
           {" "}
         </div>
         <div>
-          {isSushiOpen() ? <p>We are open.</p> : <p>We are closed.</p>}
+          {isSushiOpenPhrase()}
         </div>
       </div>
 
@@ -70,7 +70,7 @@ export default function Footer({ children, active }) {
       <div class="space-y-2">
         <div class="text-xs">
           Copyright © Sushi J Express<br />
-          <a href="https://hyprtxt.dev">Coded</a> in Arizona.
+          <a href="https://hyprtxt.dev">Coded in Prescott Valley</a>.
         </div>
         <a
           href="https://github.com/Hyprtxt/pvsushi.com"

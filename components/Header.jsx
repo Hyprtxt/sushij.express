@@ -12,7 +12,7 @@ export default function Header({ active }) {
       <div class="flex items-center flex-1">
         {/* <HyprtxtIcon /> */}
         <div class="text-2xl  ml-1 font-bold">
-          Sushi J Express
+          Sushi <span class="text-red">J</span> Express
         </div>
       </div>
       <ul class="flex items-center gap-6">

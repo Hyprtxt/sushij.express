@@ -14,10 +14,8 @@ export default {
     colors: {
       purple: "#271f3f",
       green: "#59a188",
-      // red: "rgb(210,81,153)",
-      // orange: "rgb(249,108,98)",
-      // yellow: "rgb(254,245,121)",
-      blue: "rgb(0,190,211)",
+      red: "rgb(255,25,25)",
+      blue: "#84b3ea",
       indigo: "rgb(0,153,212)",
       violet: "rgb(108, 73, 136)",
       grey: colors.coolGray,
