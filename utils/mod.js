@@ -24,7 +24,6 @@ export const isSushiOpenPhrase = () => {
   const now = time().tz("America/Phoenix").t
   const date = new Date(now)
   const current_time = format(date, "HHmm")
-  console.log(date, "DATE")
   // is not sunday or monday
   if (date.getDay() > 1) {
     // is 1100 - 1900
