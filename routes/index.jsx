@@ -78,8 +78,12 @@ export default function Home(props) {
           <h1 id="welcome">
             <a href="#welcome">Hello</a>
           </h1>
-          <p>
+          <p class="text-lg">
             Very Good Sushi is found in Prescott Valley
+          </p>
+          {/* // Remember: Update Hours in Layout Schema and Functions too */}
+          <p class="text-lg text-red">
+            Tuesday - Saturday<br />11:00 am - 2:30 pm<br />4:30 pm - 7:00 pm
           </p>
         </section>
       </Layout>

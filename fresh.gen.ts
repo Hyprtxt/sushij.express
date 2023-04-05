@@ -9,10 +9,8 @@ import * as $2 from "./routes/_middleware.js"
 import * as $3 from "./routes/index.jsx"
 import * as $4 from "./routes/menu.jsx"
 import * as $5 from "./routes/order.jsx"
-import * as $6 from "./routes/pages/[slug].jsx"
-import * as $7 from "./routes/pages/index.jsx"
-import * as $8 from "./routes/sitemap.xml.js"
-import * as $9 from "./routes/uploads/[file].js"
+import * as $6 from "./routes/sitemap.xml.js"
+import * as $7 from "./routes/uploads/[file].js"
 import * as $$0 from "./islands/Counter.tsx"
 import * as $$1 from "./islands/SingleImagePopup.jsx"
 import * as $$2 from "./islands/Slideshow.tsx"
@@ -26,10 +24,8 @@ const manifest = {
     "./routes/index.jsx": $3,
     "./routes/menu.jsx": $4,
     "./routes/order.jsx": $5,
-    "./routes/pages/[slug].jsx": $6,
-    "./routes/pages/index.jsx": $7,
-    "./routes/sitemap.xml.js": $8,
-    "./routes/uploads/[file].js": $9,
+    "./routes/sitemap.xml.js": $6,
+    "./routes/uploads/[file].js": $7,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
