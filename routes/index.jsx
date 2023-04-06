@@ -24,6 +24,7 @@ export default function Home(props) {
             <span class="font-express">EXPRESS</span>
           </h1>
           <p class="tagline">
+            insert logo here
             {/* 本当に速いのウェブサイト */}
           </p>
         </div>
