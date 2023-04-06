@@ -36,17 +36,18 @@ export const isSushiOpenPhrase = () => {
   // is not sunday or monday
   if (dayOfWeek > 1) {
     // is at least 1100
-    if (current_time > 1059) {
+    if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630
       if (current_time < 1429 && current_time > 1630) {
         return "Closed until Dinner"
       }
       return "Now Open"
     }
-    if (current_time < 1900) {
-      return "We are Closed for the Day"
-    }
-    return "We are not open yet 🤤"
+    return "We are closed"
+    // if (current_time > 1900) {
+    //   return "We are Closed for the Day"
+    // }
+    // return "We are not open yet 🤤"
   }
   return "Not Open Today"
 }
