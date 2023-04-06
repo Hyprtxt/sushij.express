@@ -38,7 +38,7 @@ export const isSushiOpenPhrase = () => {
     // is at least 1100
     if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630
-      if (current_time > 1429 && current_time > 1630) {
+      if (current_time > 1429 && current_time < 1630) {
         return "Closed until Dinner"
       }
       return "Now Open"
