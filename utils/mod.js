@@ -13,7 +13,7 @@ export const isSushiOpen = () => {
     // is 1100 - 1900
     if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630
-      if (current_time < 1429 && current_time > 1630) {
+      if (current_time > 1429 && current_time < 1630) {
         return false
       }
       return true
