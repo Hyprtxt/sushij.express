@@ -1,8 +1,14 @@
 import { format } from "$std/datetime/mod.ts"
 
 export const isSushiOpen = () => {
-  const current_time = format(new Date(), "HHmm")
-  const dayOfWeek = new Date().getDay()
+  const date = new Date()
+  const current_time = date.toLocaleString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: "America/Phoenix",
+  }).replace(":", "")
+  const dayOfWeek = date.getDay()
   console.log(current_time, dayOfWeek, "current_time")
   // is not sunday or monday
   if (dayOfWeek > 1) {
@@ -20,8 +26,14 @@ export const isSushiOpen = () => {
 }
 
 export const isSushiOpenPhrase = () => {
-  const current_time = format(new Date(), "HHmm")
-  const dayOfWeek = new Date().getDay()
+  const date = new Date()
+  const current_time = date.toLocaleString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: "America/Phoenix",
+  }).replace(":", "")
+  const dayOfWeek = date.getDay()
   console.log(current_time, dayOfWeek, "current_time")
   // is not sunday or monday
   if (dayOfWeek > 1) {
