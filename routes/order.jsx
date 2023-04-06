@@ -11,7 +11,7 @@ export default function Showcase(props) {
         <meta name="author" content="Taylor Young" />
         <meta
           name="description"
-          content="Order Sushi J Express To Go"
+          content="Order Sushi J Express"
         />
       </Head>
       <Layout data={props}>

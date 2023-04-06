@@ -3,16 +3,16 @@ import * as colors from "twind/colors"
 
 export default {
   selfURL: import.meta.url,
-  preflight: {
-    "@import":
-      "url(https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=Kolker+Brush&display=swap)",
-    "@font-face": [
-      {
-        fontFamily: "Kolker Brush",
-      },
-      { fontFamily: "Cormorant", fontWeight: "italic" },
-    ],
-  },
+  // preflight: {
+  //   "@import":
+  //     "url(https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=Kolker+Brush&display=swap)",
+  //   "@font-face": [
+  //     {
+  //       fontFamily: "Kolker Brush",
+  //     },
+  //     { fontFamily: "Cormorant", fontWeight: "italic" },
+  //   ],
+  // },
   theme: {
     extend: {
       transitionDuration: {
@@ -21,18 +21,18 @@ export default {
         "2000": "2000ms",
       },
     },
-    fontFamily: {
-      "brush": [
-        '"Kolker Brush"',
-        "Segoe Print",
-        "Bradley Hand",
-        "Chilanka",
-        "TSCu_Comic",
-        "casual",
-        "cursive",
-      ],
-      "express": ['"Cormorant"', "serif"],
-    },
+    // fontFamily: {
+    //   "brush": [
+    //     '"Kolker Brush"',
+    //     "Segoe Print",
+    //     "Bradley Hand",
+    //     "Chilanka",
+    //     "TSCu_Comic",
+    //     "casual",
+    //     "cursive",
+    //   ],
+    //   "express": ['"Cormorant"', "serif"],
+    // },
     colors: {
       purple: "#271f3f",
       green: "#59a188",

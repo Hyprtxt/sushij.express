@@ -79,17 +79,13 @@ export const globalStyles = css({
 export const homeStyles = css({
   ":global": {
     ".logo": {
-      "&": apply(animation("600ms ease-out 1", fadeIn)),
-      // background: `url(${
-      //   asset("/hyprtxt_stack.webp")
-      // }) no-repeat center center`,
-      // width: "300px",
-      // height: "304px",
-      padding: "2rem",
+      "&": apply(`p-5 h-48 ${animation("600ms ease-out 1", fadeIn)}`),
+      background: `url(${asset("/sushijexpress.jpg")}) no-repeat center center`,
+      maxWidth: "420px",
       margin: "0 auto",
       backgroundSize: "cover",
     },
-    ".tagline": apply`my-8 ${
+    ".tagline": apply`my-8 text-2xl text-dark ${
       animation("1000ms ease-out 1", swoopDownFadeInLast)
     }`,
     ".landing-page":
