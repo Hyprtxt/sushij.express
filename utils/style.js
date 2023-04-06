@@ -79,7 +79,7 @@ export const globalStyles = css({
 export const homeStyles = css({
   ":global": {
     ".logo": {
-      "&": apply(`p-5 h-48 ${animation("600ms ease-out 1", fadeIn)}`),
+      "&": apply(`p-5 h-60 ${animation("600ms ease-out 1", fadeIn)}`),
       background: `url(${asset("/sushijexpress.jpg")}) no-repeat center center`,
       maxWidth: "420px",
       margin: "0 auto",
