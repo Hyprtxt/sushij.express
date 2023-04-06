@@ -1,12 +1,11 @@
 import { format } from "$std/datetime/mod.ts"
-import { time } from "time"
 
 export const isSushiOpen = () => {
-  const now = time().tz("America/Phoenix").t
-  const date = new Date(now)
-  const current_time = format(date, "HHmm")
+  const current_time = format(new Date(), "HHmm")
+  const dayOfWeek = new Date().getDay()
+  console.log(current_time, dayOfWeek, "current_time")
   // is not sunday or monday
-  if (date.getDay() > 1) {
+  if (dayOfWeek > 1) {
     // is 1100 - 1900
     if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630
@@ -21,11 +20,11 @@ export const isSushiOpen = () => {
 }
 
 export const isSushiOpenPhrase = () => {
-  const now = time().tz("America/Phoenix").t
-  const date = new Date(now)
-  const current_time = format(date, "HHmm")
+  const current_time = format(new Date(), "HHmm")
+  const dayOfWeek = new Date().getDay()
+  console.log(current_time, dayOfWeek, "current_time")
   // is not sunday or monday
-  if (date.getDay() > 1) {
+  if (dayOfWeek > 1) {
     // is 1100 - 1900
     if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630

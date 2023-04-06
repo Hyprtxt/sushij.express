@@ -18,8 +18,10 @@ export default function Home(props) {
         <div class="mx-auto">
           <p class="my-8">🍱 Welcome 🍣</p>
           {/* <div class="logo"></div> */}
-          <h1 class="logo text-6xl">
-            Sushi <span class="text-red">J</span> Express
+          <h1 class="logo text-6xl text-dark font-bold">
+            <span class="font-brush text-8xl">Sushi</span>{" "}
+            <span class="text-red">J</span>{" "}
+            <span class="font-express">EXPRESS</span>
           </h1>
           <p class="tagline">
             {/* 本当に速いのウェブサイト */}
