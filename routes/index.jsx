@@ -16,7 +16,7 @@ export default function Home(props) {
       <div class={tw`${homeStyles}`}></div>
       <section class="landing-page">
         <div class="mx-auto">
-          <p class="my-8 text-2xl text-dark">🍱 Welcome 🍣</p>
+          <p class="my-8 text-dark">🍱 Welcome 🍣</p>
           <div class="logo"></div>
           {
             /* <h1 class="logo text-6xl text-dark font-bold">
@@ -45,5 +45,28 @@ export default function Home(props) {
         </section>
       </Layout>
     </>
+  )
+}
+
+const HoursTable = () => {
+  return (
+    <table class="table text-lg text-red">
+      <thead class="table-header-group">
+        <tr class="table-row">
+          <th class="table-cell"></th>
+          <th class="table-cell">Tuesday - Saturday</th>
+        </tr>
+      </thead>
+      <tbody class="table-row-group">
+        <tr class="table-row">
+          <td class="table-cell font-bold">Lunch</td>
+          <td class="table-cell ">11:00 am - 2:30 pm</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-cell font-bold">Dinner</td>
+          <td class="table-cell ">4:30 pm - 7:00 pm</td>
+        </tr>
+      </tbody>
+    </table>
   )
 }

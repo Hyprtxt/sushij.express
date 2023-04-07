@@ -39,11 +39,11 @@ export const isSushiOpenPhrase = () => {
     if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630
       if (current_time > 1429 && current_time < 1630) {
-        return "Closed until Dinner"
+        return "We are closed until dinner"
       }
-      return "Now Open"
+      return "Now open"
     }
-    return "We are Closed"
+    return "We are closed for the day"
   }
-  return "Not Open Today"
+  return "Not open today"
 }
