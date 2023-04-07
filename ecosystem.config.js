@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: "hyprtxt.dev",
+    name: "pvsushi.com",
     script: "deno task run",
   }],
 }
