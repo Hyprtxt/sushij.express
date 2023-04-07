@@ -80,11 +80,11 @@ export const homeStyles = css({
   ":global": {
     ".logo-parent": {
       "&": apply`h-60 w-80 m-auto`,
-      backgroundColor: "#7cabe4",
+      // backgroundColor: "#7cabe4",
     },
     ".logo": {
       "&": apply`h-60 ${animation("600ms ease-out 1", fadeIn)}`,
-      mixBlendMode: "multiply",
+      // mixBlendMode: "multiply",
       margin: "0 auto",
     },
     ".tagline": apply`my-8 text-2xl text-dark ${
