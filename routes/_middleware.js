@@ -1,7 +1,7 @@
 // routes/_middleware.js
 import { blue, cyan, green, magenta, red, yellow } from "$std/fmt/colors.ts"
 
-import { API_URL, BASE_URL, DENO_ENV } from "@/utils/config.js"
+import { BASE_URL, DENO_ENV } from "@/utils/config.js"
 
 export async function handler(req, ctx) {
   // For Logging
@@ -15,11 +15,8 @@ export async function handler(req, ctx) {
     withSession.includes(pathname) ||
     pathname.startsWith("/pages/")
   ) {
-    ctx.API_URL = API_URL
     ctx.BASE_URL = BASE_URL
     ctx.DENO_ENV = DENO_ENV
-    // ctx.store = store
-    // resp = await setupSession(req, ctx)
   }
   const resp = await ctx.next()
   const now = Date.now()
