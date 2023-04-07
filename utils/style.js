@@ -78,12 +78,14 @@ export const globalStyles = css({
 
 export const homeStyles = css({
   ":global": {
+    ".logo-parent": {
+      "&": apply`h-60 w-80 m-auto`,
+      backgroundColor: "#7cabe4",
+    },
     ".logo": {
-      "&": apply(`p-5 h-60 ${animation("600ms ease-out 1", fadeIn)}`),
-      background: `url(${asset("/sushijexpress.jpg")}) no-repeat center center`,
-      maxWidth: "420px",
+      "&": apply`h-60 ${animation("600ms ease-out 1", fadeIn)}`,
+      mixBlendMode: "multiply",
       margin: "0 auto",
-      backgroundSize: "cover",
     },
     ".tagline": apply`my-8 text-2xl text-dark ${
       animation("1000ms ease-out 1", swoopDownFadeInLast)

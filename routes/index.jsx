@@ -2,6 +2,7 @@ import { Head } from "$fresh/runtime.ts"
 import Layout from "@/components/Layout.jsx"
 import { tw } from "twind"
 import { homeStyles } from "@/utils/style.js"
+import { asset } from "$fresh/runtime.ts"
 
 export default function Home(props) {
   return (
@@ -17,7 +18,9 @@ export default function Home(props) {
       <section class="landing-page">
         <div class="mx-auto">
           <p class="my-8 text-dark">🍱 Welcome 🍣</p>
-          <div class="logo"></div>
+          <div class="logo-parent">
+            <img class="logo" src={asset("/sushijexpress.jpg")} alt="" />
+          </div>
           {
             /* <h1 class="logo text-6xl text-dark font-bold">
             <span class="font-brush text-8xl">Sushi</span>{" "}
