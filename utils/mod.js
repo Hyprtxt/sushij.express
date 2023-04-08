@@ -43,7 +43,11 @@ export const isSushiOpenPhrase = () => {
       }
       return "Now open"
     }
-    return "We are closed for the day"
+    if (current_time > 1900) {
+      return "We are closed for the day"
+    } else {
+      return "We aren't open yet"
+    }
   }
   return "Not open today"
 }
