@@ -1,4 +1,4 @@
-import { Head } from "$fresh/runtime.ts"
+import { asset, Head } from "$fresh/runtime.ts"
 import Layout from "@/components/Layout.jsx"
 // import IconBrandGithub from "$icons/brand-github.tsx"
 
@@ -18,9 +18,7 @@ export default function Showcase(props) {
           <h1>
             Menu
           </h1>
-          <p>
-            A place for a menu
-          </p>
+          <img src={asset(`/menu.webp`)} alt="the menu" />
         </section>
       </Layout>
     </>
