@@ -50,6 +50,18 @@ export const globalStyles = css({
         "&:active": apply`text-dark`,
       },
     },
+    ".menu-section": {
+      ".menu-item": {
+        backgroundImage:
+          "linear-gradient(to right, #000 15%, rgba(255, 255, 255, 0) 0%)",
+        backgroundPosition: "0 17px",
+        backgroundSize: "10px 1px",
+        backgroundRepeat: "repeat-x",
+        span: {
+          backgroundColor: "white",
+        },
+      },
+    },
     h1: apply`text-4xl`,
     h2: apply`text-2xl`,
     h3: apply`text-xl`,

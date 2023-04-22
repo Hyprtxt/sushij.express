@@ -2,6 +2,9 @@ import { asset, Head } from "$fresh/runtime.ts"
 import Layout from "@/components/Layout.jsx"
 // import IconBrandGithub from "$icons/brand-github.tsx"
 
+const SECTION_CLASS =
+  "max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown menu-section"
+
 export default function Showcase(props) {
   return (
     <>
@@ -14,43 +17,43 @@ export default function Showcase(props) {
         />
       </Head>
       <Layout data={props}>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h1>
             Menu
           </h1>
           <img src={asset(`/menu.webp`)} alt="the menu" />
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <p>🍣 Raw Fish Ingredients</p>
           <p>🌶️ This Dish is Spicy</p>
           <p>MOST ITEMS CONTAIN SESAME SEEDS</p>
           <p>INGREDIENTS DEPENDING ON AVAILABILITY</p>
           <p>SUBSTITUTION COST EXTRA</p>
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Noodles</h2>
           <p>
-            TEMPURA UDON or SOBA
+            <span>TEMPURA UDON or SOBA</span>
             <span class="float-right">12</span>
           </p>
           <p>
-            KITSUNE UDON or SOBA
+            <span>KITSUNE UDON or SOBA</span>
             <span class="float-right">9</span>
           </p>
           <p>
-            KAKIAGE UDON or SOBA
+            <span>KAKIAGE UDON or SOBA</span>
             <span class="float-right">10</span>
           </p>
           <p>
-            Add 2pcs Inari
+            <span>Add 2pcs Inari</span>
             <span class="float-right">+2</span>
           </p>
           <p>
-            EXTRA SAUCES etc.
+            <span>EXTRA SAUCES etc.</span>
             <span class="float-right">+1</span>
           </p>
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Combo</h2>
           <p class="text-sm">served with rice and green salad</p>
           <p>
@@ -82,33 +85,35 @@ export default function Showcase(props) {
           </div>
           <div class="clear-both">
           </div>
-          <p>
-            🍣 HAND ROLL SET (2 hand rolls, 2 egg rolls, salad, miso soup)
+          <p class="menu-item">
+            <span>
+              🍣 HAND ROLL SET (2 hand rolls, 2 egg rolls, salad, miso soup)
+            </span>
             <span class="float-right">14</span>
           </p>
-          <p>
-            🍣 CHIRASHI SUSHI BOWL (served with miso soup)
+          <p class="menu-item">
+            <span>🍣 CHIRASHI SUSHI BOWL (served with miso soup)</span>
             <span class="float-right">18</span>
           </p>
-          <p>
-            🍣 SALMON SUSHI BOWL (served with miso soup)
+          <p class="menu-item">
+            <span>🍣 SALMON SUSHI BOWL (served with miso soup)</span>
             <span class="float-right">18</span>
           </p>
-          <p>
-            🍣 SUSHI SAMPLER
+          <p class="menu-item">
+            <span>🍣 SUSHI SAMPLER</span>
             <span class="float-right">13</span>
           </p>
-          <p>
-            2pcs INARI SUSHI (fried tofu pouch)
+          <p class="menu-item">
+            <span>2pcs INARI SUSHI (fried tofu pouch)</span>
             <span class="float-right">3.5</span>
           </p>
-          <p>
-            5pcs INARI SUSHI (fried tofu pouch)
+          <p class="menu-item">
+            <span>5pcs INARI SUSHI (fried tofu pouch)</span>
             <span class="float-right">6.5</span>
           </p>
         </section>
 
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Appetizer</h2>
           <p>
             🌶️ NINJA JALAPENO (4pcs) <span class="float-right">9.5</span>
@@ -139,7 +144,7 @@ export default function Showcase(props) {
             <span class="float-right">14</span>
           </p>
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Soup, Rice, Salad</h2>
           <p>
             MISO SOUP <span class="float-right">2.5</span>
@@ -154,7 +159,7 @@ export default function Showcase(props) {
             🍣 SASHIMI SALAD <span class="float-right">18</span>
           </p>
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Bowl</h2>
           <p>
             TERIYAKI CHICKEN BOWL <span class="float-right">8.5</span>
@@ -184,7 +189,7 @@ export default function Showcase(props) {
             </span>
           </p>
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Meal</h2>
           <p class="text-sm">served with rice and green salad</p>
           <p>
@@ -201,7 +206,7 @@ export default function Showcase(props) {
             <span class="float-right"></span>
           </p>
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Nigiri Sushi (2pcs)</h2>
           <p>
             🍣 ALBACORE<span class="float-right">6.5</span>
@@ -222,7 +227,7 @@ export default function Showcase(props) {
             🍣 WHITE FISH<span class="float-right">5.5</span>
           </p>
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Maki Sushi (8pcs)</h2>
           <p>
             🌶️ 🍣 SPICY TUNA or SPICY SALMON
@@ -311,7 +316,7 @@ export default function Showcase(props) {
           </p>
         </section>
 
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Sashimi</h2>
           <p>
             🍣 SALMON<span class="float-right">15</span>
@@ -332,7 +337,7 @@ export default function Showcase(props) {
             with rice and miso soup)<span class="float-right">25</span>
           </p>
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Party Platter</h2>
           <p>Call at least 2 hours in advance please</p>
           <p>
@@ -365,7 +370,7 @@ export default function Showcase(props) {
             <span class="float-right">58</span>
           </p>
         </section>
-        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+        <section class={SECTION_CLASS}>
           <h2>Additional</h2>
           <p>AVOCADO inside ($1.25)</p>
           <p>AVOCADO on top ($2.50)</p>
