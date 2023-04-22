@@ -65,8 +65,7 @@ export default function Showcase(props) {
               <li>AJI FRY</li>
             </ul>
           </div>
-
-          <div class="float-left pl-5">
+          <div class="float-left sm:(pl-5)">
             <h3>Side</h3>
             <ul>
               <li>California roll (4pcs)</li>
@@ -492,17 +491,19 @@ export default function Showcase(props) {
         </section>
         <section class={SECTION_CLASS}>
           <h2>Additional</h2>
-          <p>AVOCADO inside ($1.25)</p>
-          <p>AVOCADO on top ($2.50)</p>
-          <p>JALAPEÑO (75¢)</p>
-          <p>CUCUMBER (75¢)</p>
-          <p>MASAGO ($4)</p>
-          <p>SOY PAPER ($1.25)</p>
-          <p>GREEN ONIONS (75¢)</p>
-          <p>CRUNCHYS ($1)</p>
-          <p>CREAM CHEESE ($1)</p>
-          <p>EXTRA SAUCES ($1)</p>
-          <p>GINGER 8oz ($4)</p>
+          <ul>
+            <li>AVOCADO inside ($1.25)</li>
+            <li>AVOCADO on top ($2.50)</li>
+            <li>JALAPEÑO (75¢)</li>
+            <li>CUCUMBER (75¢)</li>
+            <li>MASAGO ($4)</li>
+            <li>SOY PAPER ($1.25)</li>
+            <li>GREEN ONIONS (75¢)</li>
+            <li>CRUNCHYS ($1)</li>
+            <li>CREAM CHEESE ($1)</li>
+            <li>EXTRA SAUCES ($1)</li>
+            <li>GINGER 8oz ($4)</li>
+          </ul>
         </section>
         <section class={SECTION_CLASS}>
           <p>🍣 Raw Fish Ingredients</p>
