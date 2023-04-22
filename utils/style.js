@@ -63,6 +63,9 @@ export const globalStyles = css({
         },
       },
     },
+    ".no-top-margin": {
+      marginTop: "0 !important",
+    },
     h1: apply`text-4xl`,
     h2: apply`text-2xl`,
     h3: apply`text-xl`,
@@ -106,7 +109,7 @@ export const homeStyles = css({
     ".landing-page":
       apply`fixed top-0 bg-transparent w-full text-white text-center min-h-screen -z-10`,
     "section.header-wrapper": {
-      marginTop: "94vh",
+      marginTop: "84vh",
     },
   },
 })

@@ -177,11 +177,11 @@ export default function Showcase(props) {
         </section>
         <section class={SECTION_CLASS}>
           <h2>Bowl</h2>
-          <p class="menu-item">
+          <p class="menu-item mb-0">
             <span>TERIYAKI CHICKEN BOWL</span>{" "}
             <span class="float-right">8.5</span>
           </p>
-          <p>
+          <p class="no-top-margin">
             <span class="float-right">
               <span class="text-sm">
                 ADD VEGGIE (broccoli and carrots)
