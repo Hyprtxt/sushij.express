@@ -42,7 +42,7 @@ export default function Showcase(props) {
             <span class="float-right">10</span>
           </p>
           <p class="menu-item">
-            <span>Add 2pcs INARI{" "}</span>
+            <span>ADD 2pcs INARI{" "}</span>
             <span class="float-right">+2</span>
           </p>
           <p class="menu-item">
