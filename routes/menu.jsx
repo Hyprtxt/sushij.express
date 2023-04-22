@@ -511,6 +511,10 @@ export default function Showcase(props) {
           <p>MOST ITEMS CONTAIN SESAME SEEDS</p>
           <p>INGREDIENTS DEPENDING ON AVAILABILITY</p>
           <p>SUBSTITUTION COST EXTRA</p>
+          <p>
+            * 🍣 Consumption of raw or undercooked foods can cause food bourne
+            illness 🍣 *
+          </p>
         </section>
       </Layout>
     </>
