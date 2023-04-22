@@ -42,11 +42,11 @@ export default function Showcase(props) {
             <span class="float-right">10</span>
           </p>
           <p class="menu-item">
-            <span>Add 2pcs Inari{" "}</span>
+            <span>Add 2pcs INARI{" "}</span>
             <span class="float-right">+2</span>
           </p>
           <p class="menu-item">
-            <span>EXTRA SAUCES etc&hellip;{" "}</span>
+            <span>extra sauces, etc&hellip;{" "}</span>
             <span class="float-right">+1</span>
           </p>
         </section>
@@ -211,7 +211,7 @@ export default function Showcase(props) {
           </p>
           <p class="menu-item">
             <span>
-              🍣 POKE BOWL (tuna, salmon or Mix )
+              🍣 POKE BOWL (tuna, salmon or mix)
             </span>
             <span class="float-right">
               16
@@ -434,13 +434,13 @@ export default function Showcase(props) {
           <br />
           <p class="menu-item">
             <span>
-              🍣 Sashimi Sampler (tuna, salmon, white fish, 2pcs ea.)
+              🍣 SASHIMI SAMPLER (tuna, salmon, white fish, 2pcs ea.)
             </span>
             <span class="float-right">15</span>
           </p>
           <p class="menu-item">
             <span>
-              🍣 Sashimi Mori (tuna, salmon, white fish, albacore 3pcs ea.
+              🍣 SASHIMI MORI (tuna, salmon, white fish, albacore 3pcs ea.
               Served with rice and miso soup)
             </span>
             <span class="float-right">25</span>
@@ -459,14 +459,14 @@ export default function Showcase(props) {
           </p>
           <p class="menu-item">
             <span>
-              🌶️ 🍣 Spicy Sushi Platter (40 pcs)<br />
+              🌶️ 🍣 SPICY SUSHI PLATTER (40 pcs)<br />
               (1 spicy tuna, 1 spicy salmon, 2 spicy crab rolls, 1 lava roll)
             </span>
             <span class="float-right">42</span>
           </p>
           <p class="menu-item">
             <span>
-              🍣 Roll Platter (40pc)<br />
+              🍣 ROLL PLATTER (40pc)<br />
               (2 california rolls, 1 shrimp tempura roll, 1 spicy tuna or spicy
               salmon, 1 rainbow roll)
             </span>
