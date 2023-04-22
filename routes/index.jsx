@@ -3,6 +3,8 @@ import Layout from "@/components/Layout.jsx"
 import { tw } from "twind"
 import { homeStyles } from "@/utils/style.js"
 import { asset } from "$fresh/runtime.ts"
+import { Menu } from "@/routes/menu.jsx"
+import { isSushiOpen } from "@/utils/mod.js"
 
 export default function Home(props) {
   return (
@@ -47,6 +49,19 @@ export default function Home(props) {
             pm<br />Dinner: 4:30 pm - 7:00 pm
           </p>
         </section>
+        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+          <h1>Order Today!</h1>
+          <p class="text-2xl">
+            <a href="tel:+19287759323">(928) 775-9323</a>
+          </p>
+          {isSushiOpen()
+            ? <p>We are Open.</p>
+            : <p>We are not Open right now, please come back later.</p>}
+        </section>
+        <section class="max-w-screen-lg mx-auto p-8 pb-3 bg-white">
+          <h1>Menu</h1>
+        </section>
+        <Menu />
       </Layout>
     </>
   )
