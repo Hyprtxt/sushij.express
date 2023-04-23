@@ -7,9 +7,9 @@ export const Menu = () => {
     "max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown menu-section"
   return (
     <>
-      <section class={SECTION_CLASS}>
+      <section class="max-w-screen-lg mx-auto px(8) bg-white">
         <p class="text-sm">🍣 Raw Fish Ingredients</p>
-        <p class="text-sm">🌶️ This Dish is Spicy</p>
+        <p class="p-0 text-sm">🌶️ This Dish is Spicy</p>
       </section>
       <section class={SECTION_CLASS}>
         <h2>Noodles</h2>
