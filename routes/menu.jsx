@@ -80,7 +80,9 @@ export const Menu = () => {
           <span class="float-right">18</span>
         </p>
         <p class="menu-item">
-          <span>🍣 SUSHI SAMPLER</span>
+          <span>
+            🍣 SUSHI SAMPLER (cali roll + tuna, salmon & white fish nigiri)
+          </span>
           <span class="float-right">13</span>
         </p>
         <p class="menu-item">
@@ -279,7 +281,7 @@ export const Menu = () => {
         </p>
         <p class="menu-item">
           <span>
-            🌶️🌶️ 🍣 LAVA (spicy imitation crab, jalapeño, spicy tuna or salmon)
+            🌶️🌶️ 🍣 LAVA (spicy surimi, jalapeño, spicy tuna or salmon)
           </span>
           <span class="float-right">12</span>
         </p>
@@ -297,13 +299,13 @@ export const Menu = () => {
         </p>
         <p class="menu-item">
           <span>
-            🍣 POKE (seasoned tuna, avocado, spicy mayo green onion)
+            🍣 POKE (seasoned tuna, avocado, spicy mayo, green onion)
           </span>
           <span class="float-right">14</span>
         </p>
         <p class="menu-item">
           <span>
-            🍣 PHILADELPHIA (smoke salmon. cream cheese)
+            🍣 PHILADELPHIA (smoke salmon, cream cheese)
           </span>
           <span class="float-right">11</span>
         </p>
@@ -315,7 +317,7 @@ export const Menu = () => {
         </p>
         <p class="menu-item">
           <span>
-            🌶️ 🍣 DYNAMITE (spicy crab roll + spicy salmon, scallop, 3 sauces)
+            🌶️ 🍣 DYNAMITE (spicy suirimi roll + spicy salmon, scallop, 3 sauces)
           </span>
           <span class="float-right">14.5</span>
         </p>
@@ -333,7 +335,7 @@ export const Menu = () => {
         </p>
         <p class="menu-item">
           <span>
-            CALIFORNIA
+            CALIFORNIA (surimi and avacado)
           </span>
           <span class="float-right">6.5</span>
         </p>
@@ -376,7 +378,7 @@ export const Menu = () => {
         </p>
         <p class="menu-item">
           <span>
-            КАРРА (6pcs) (cucumber)
+            KAPPA (6pcs) (cucumber)
           </span>
           <span class="float-right">4</span>
         </p>
