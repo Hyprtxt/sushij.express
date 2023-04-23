@@ -55,7 +55,7 @@ const Menu = () => {
         <div class="float-left">
           <h3 class="sm:(pl-5)">Side</h3>
           <div class="float-left sm:(pl-5)">
-            <ul>
+            <ul class="mb-0">
               <li>California roll (4pcs)</li>
               <li>Spicy crab roll (4pcs)</li>
               <li>🌶️ 🍣 Spicy tuna roll (4pcs)</li>
@@ -485,7 +485,7 @@ const Menu = () => {
       </MenuSection>
       <MenuSection>
         <h2>Additional</h2>
-        <ul>
+        <ul class="grid sm:(grid-cols-2) md:(grid-cols-3)">
           <li>AVOCADO inside ($1.25)</li>
           <li>AVOCADO on top ($2.50)</li>
           <li>JALAPEÑO (75¢)</li>

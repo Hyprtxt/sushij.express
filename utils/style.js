@@ -75,6 +75,7 @@ export const globalStyles = css({
         "li": apply`ml-5`,
         "&": apply`mb-3`,
       },
+      "ul.mb-0": apply`mb-0`,
       "ul li": apply`list-disc`,
       "ol li": apply`list-decimal`,
     },
