@@ -1,12 +1,11 @@
 import { tw } from "twind"
-import { apply, css } from "twind/css"
+import { apply, css, theme } from "twind/css"
 
 const menuStyle = css({
-  "&":
-    apply`max-w-screen-lg mx-auto p(8) space-y-4 bg-white markdown menu-section`,
+  "&": apply`max-w-screen-lg mx-auto p(8) space-y-4 bg-white`,
   ".menu-item": {
     backgroundImage:
-      "linear-gradient(to right, #000 15%, rgba(255, 255, 255, 0) 0%)",
+      `linear-gradient(to right, rgba(15,15,15,1) 15%, rgba(15,15,15,0) 0%)`,
     backgroundPosition: "center bottom 7px",
     backgroundSize: "10px 1px",
     backgroundRepeat: "repeat-x",
@@ -15,6 +14,7 @@ const menuStyle = css({
       lineHeight: "20px",
     },
   },
+  li: apply`list-circle ml-2`,
 })
 
 const Menu = () => {
