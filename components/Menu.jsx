@@ -309,7 +309,7 @@ const Menu = () => {
         </p>
         <p class="menu-item">
           <span>
-            🌶️🌶️ 🍣 LAVA (spicy surimi, jalapeño, spicy tuna or salmon)
+            🌶️🌶️ 🍣 LAVA (spicy imitation crab, jalapeño, spicy tuna or salmon)
           </span>
           <span class="float-right">12</span>
         </p>
@@ -363,13 +363,13 @@ const Menu = () => {
         </p>
         <p class="menu-item">
           <span>
-            CALIFORNIA (surimi and avacado)
+            CALIFORNIA (imitation crab and avacado)
           </span>
           <span class="float-right">6.5</span>
         </p>
         <p class="menu-item">
           <span>
-            🌶️ SPICY CRAB (spicy surimi, cucumber)
+            🌶️ SPICY CRAB (spicy imitation crab, cucumber)
           </span>
           <span class="float-right">6.5</span>
         </p>
