@@ -362,7 +362,8 @@ const Menu = () => {
         </p>
         <p class="menu-item">
           <span>
-            DOUBLE SHRIMP
+            DOUBLE SHRIMP (shrimp tempura roll + shrimp, avacado, sweet chili
+            sauce)
           </span>
           <span class="float-right">14</span>
         </p>
