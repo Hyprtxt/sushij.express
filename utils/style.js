@@ -50,19 +50,6 @@ export const globalStyles = css({
         "&:active": apply`text-dark`,
       },
     },
-    ".menu-section": {
-      ".menu-item": {
-        backgroundImage:
-          "linear-gradient(to right, #000 15%, rgba(255, 255, 255, 0) 0%)",
-        backgroundPosition: "center bottom 7px",
-        backgroundSize: "10px 1px",
-        backgroundRepeat: "repeat-x",
-        span: {
-          backgroundColor: "white",
-          lineHeight: "20px",
-        },
-      },
-    },
     ".no-top-margin": {
       marginTop: "0 !important",
     },
