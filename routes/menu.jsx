@@ -3,8 +3,11 @@ import Layout from "@/components/Layout.jsx"
 // import IconBrandGithub from "$icons/brand-github.tsx"
 
 export const Menu = () => {
-  const SECTION_CLASS =
-    "max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown menu-section"
+  const MenuSection = ({ children }) => (
+    <section class="max-w-screen-lg mx-auto p(8) space-y-4 bg-white markdown menu-section">
+      {children}
+    </section>
+  )
   return (
     <>
       <section class="max-w-screen-lg mx-auto px(8) bg-white">
@@ -15,7 +18,7 @@ export const Menu = () => {
           🌶️ <span class="text-sm">This Dish is Spicy</span>
         </p>
       </section>
-      <section class={SECTION_CLASS}>
+      <MenuSection>
         <h2>Noodles</h2>
         <p class="menu-item">
           <span>TEMPURA UDON or SOBA{" "}</span>
@@ -37,8 +40,8 @@ export const Menu = () => {
           <span>extra sauces, etc&hellip;{" "}</span>
           <span class="float-right">+1</span>
         </p>
-      </section>
-      <section class={SECTION_CLASS}>
+      </MenuSection>
+      <MenuSection>
         <h2>Combo</h2>
         <p class="text-sm">served with rice and green salad</p>
         <p class="menu-item">
@@ -97,9 +100,9 @@ export const Menu = () => {
           <span>5pcs INARI SUSHI (fried tofu pouch)</span>
           <span class="float-right">6.5</span>
         </p>
-      </section>
+      </MenuSection>
 
-      <section class={SECTION_CLASS}>
+      <MenuSection>
         <h2>Appetizer</h2>
         <p class="menu-item">
           <span>🌶️ NINJA JALAPENO (4pcs)</span>
@@ -137,8 +140,8 @@ export const Menu = () => {
           <span>🍣 POKE APPETIZER (tuna. salmon or mix){" "}</span>
           <span class="float-right">14</span>
         </p>
-      </section>
-      <section class={SECTION_CLASS}>
+      </MenuSection>
+      <MenuSection>
         <h2>Soup, Rice, Salad</h2>
         <p class="menu-item">
           <span>
@@ -164,8 +167,8 @@ export const Menu = () => {
           </span>
           <span class="float-right">18</span>
         </p>
-      </section>
-      <section class={SECTION_CLASS}>
+      </MenuSection>
+      <MenuSection>
         <h2>Bowl</h2>
         <p class="menu-item mb-0">
           <span>TERIYAKI CHICKEN BOWL</span>{" "}
@@ -207,8 +210,8 @@ export const Menu = () => {
             16
           </span>
         </p>
-      </section>
-      <section class={SECTION_CLASS}>
+      </MenuSection>
+      <MenuSection>
         <h2>Meal</h2>
         <p class="text-sm">served with rice and green salad</p>
         <p class="menu-item">
@@ -229,8 +232,8 @@ export const Menu = () => {
           </span>
           <span class="float-right">12.5</span>
         </p>
-      </section>
-      <section class={SECTION_CLASS}>
+      </MenuSection>
+      <MenuSection>
         <h2>Nigiri Sushi (2pcs)</h2>
         <p class="menu-item">
           <span>
@@ -268,8 +271,8 @@ export const Menu = () => {
           </span>
           <span class="float-right">5.5</span>
         </p>
-      </section>
-      <section class={SECTION_CLASS}>
+      </MenuSection>
+      <MenuSection>
         <h2>Maki Sushi (8pcs)</h2>
         <p class="menu-item">
           <span>
@@ -398,9 +401,9 @@ export const Menu = () => {
           </span>
           <span class="float-right">12</span>
         </p>
-      </section>
+      </MenuSection>
 
-      <section class={SECTION_CLASS}>
+      <MenuSection>
         <h2>Sashimi</h2>
         <p class="menu-item">
           <span>
@@ -434,8 +437,8 @@ export const Menu = () => {
           </span>
           <span class="float-right">25</span>
         </p>
-      </section>
-      <section class={SECTION_CLASS}>
+      </MenuSection>
+      <MenuSection>
         <h2>Party Platter</h2>
         <p>Call at least 2 hours in advance please</p>
         <p class="menu-item">
@@ -477,8 +480,8 @@ export const Menu = () => {
           </span>
           <span class="float-right">58</span>
         </p>
-      </section>
-      <section class={SECTION_CLASS}>
+      </MenuSection>
+      <MenuSection>
         <h2>Additional</h2>
         <ul>
           <li>AVOCADO inside ($1.25)</li>
@@ -493,8 +496,8 @@ export const Menu = () => {
           <li>EXTRA SAUCES ($1)</li>
           <li>GINGER 8oz ($4)</li>
         </ul>
-      </section>
-      <section class={SECTION_CLASS}>
+      </MenuSection>
+      <MenuSection>
         <p>🍣 Raw Fish Ingredients</p>
         <p>🌶️ This Dish is Spicy</p>
         <p>MOST ITEMS CONTAIN SESAME SEEDS</p>
@@ -504,7 +507,7 @@ export const Menu = () => {
           * 🍣 Consumption of raw or undercooked foods can cause food bourne
           illness 🍣 *
         </p>
-      </section>
+      </MenuSection>
     </>
   )
 }
