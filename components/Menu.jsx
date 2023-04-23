@@ -19,11 +19,9 @@ const menuStyle = css({
 
 const Menu = () => {
   const MenuSection = ({ children }) => (
-    <>
-      <section class={tw`${menuStyle}`}>
-        {children}
-      </section>
-    </>
+    <section class={tw`${menuStyle}`}>
+      {children}
+    </section>
   )
   return (
     <>
