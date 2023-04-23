@@ -1,9 +1,9 @@
 import { Head } from "$fresh/runtime.ts"
 import Layout from "@/components/Layout.jsx"
+import Menu from "@/components/Menu.jsx"
 import { tw } from "twind"
 import { homeStyles } from "@/utils/style.js"
 import { asset } from "$fresh/runtime.ts"
-import { Menu } from "@/routes/menu.jsx"
 import { isSushiOpen } from "@/utils/mod.js"
 
 export default function Home(props) {
