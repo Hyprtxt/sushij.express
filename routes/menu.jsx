@@ -8,8 +8,12 @@ export const Menu = () => {
   return (
     <>
       <section class="max-w-screen-lg mx-auto px(8) bg-white">
-        <p class="text-sm">🍣 Raw Fish Ingredients</p>
-        <p class="p-0 text-sm">🌶️ This Dish is Spicy</p>
+        <p class="">
+          🍣 <span class="text-sm">Raw Fish Ingredients</span>
+        </p>
+        <p class="">
+          🌶️ <span class="text-sm">This Dish is Spicy</span>
+        </p>
       </section>
       <section class={SECTION_CLASS}>
         <h2>Noodles</h2>
