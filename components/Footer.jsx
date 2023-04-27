@@ -73,7 +73,7 @@ export default function Footer({ children, active }) {
           <a href="https://hyprtxt.dev">Coded in Prescott Valley</a>.
         </div>
         <a
-          href="https://github.com/Hyprtxt/pvsushi.com"
+          href="https://github.com/Hyprtxt/sushij.express"
           class="inline-block hover:text-black"
           aria-label="Github Icon"
         >

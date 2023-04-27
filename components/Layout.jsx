@@ -27,7 +27,7 @@ const SchemaORG = () => {
       "Japanese",
     ],
     "telephone": "(928) 775-9323",
-    "url": "https://pvsushi.deno.dev",
+    "url": "https://sushij.express/",
   }
   return (
     <script
