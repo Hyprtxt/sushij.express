@@ -345,7 +345,7 @@ const Menu = () => {
         </p>
         <p class="menu-item">
           <span>
-            🌶️ 🍣 DYNAMITE (spicy suirimi roll + spicy salmon, scallop, 3 sauces)
+            🌶️ 🍣 DYNAMITE (spicy crab roll + spicy salmon, scallop, 3 sauces)
           </span>
           <span class="float-right">14.5</span>
         </p>

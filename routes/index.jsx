@@ -38,7 +38,7 @@ export default function Home(props) {
       <Layout data={props}>
         <section class="max-w-screen-lg mx-auto p-8 space-y-4 bg-white">
           <h1 id="welcome">
-            <a href="#welcome">Hello</a>
+            <a href="#welcome">Welcome, please come in</a>
           </h1>
           <p class="text-lg">
             Very Good Sushi is found in Prescott Valley
