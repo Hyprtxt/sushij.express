@@ -49,7 +49,7 @@ const Layout = ({ children, data = {} }) => (
     </section>
     {children}
     <section class={tw`flex justify-center`}>
-      <Footer />
+      <Footer hits={data?.data?.hits} />
     </section>
     {DENO_ENV === "development"
       ? (

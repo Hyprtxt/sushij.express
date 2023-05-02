@@ -1,7 +1,7 @@
 import BrandGithub from "$icons/brand-github.tsx"
 import { isSushiOpenPhrase } from "@/utils/mod.js"
 
-export default function Footer({ children, active }) {
+export default function Footer({ children, active, hits = 0 }) {
   const menus = [
     {
       title: "Pages",
@@ -79,6 +79,7 @@ export default function Footer({ children, active }) {
         >
           <BrandGithub />
         </a>
+        {hits > 0 ? <p>Hits: {hits}</p> : <></>}
       </div>
       {children}
     </div>

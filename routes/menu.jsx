@@ -2,6 +2,12 @@ import { asset, Head } from "$fresh/runtime.ts"
 import Layout from "@/components/Layout.jsx"
 import Menu from "@/components/Menu.jsx"
 
+export const handler = {
+  GET: (_req, ctx) => {
+    return ctx.render({ ...ctx.state, hits: parseInt(ctx.hits) })
+  },
+}
+
 export default function MenuPage(props) {
   return (
     <>

@@ -6,6 +6,12 @@ import { homeStyles } from "@/utils/style.js"
 import { asset } from "$fresh/runtime.ts"
 import { isSushiOpen, isSushiOpenPhrase } from "@/utils/mod.js"
 
+export const handler = {
+  GET: (_req, ctx) => {
+    return ctx.render({ ...ctx.state, hits: parseInt(ctx.hits) })
+  },
+}
+
 export default function Home(props) {
   return (
     <>
@@ -50,18 +56,15 @@ export default function Home(props) {
           </p>
           <p>{isSushiOpenPhrase()}</p>
         </section>
-        {isSushiOpen() &&
-          (
-            <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
-              <h1>Order Today!</h1>
-              <p class="text-2xl">
-                <a href="tel:+19287759323">(928) 775-9323</a>
-              </p>
-              {isSushiOpen()
-                ? <p>We are Open.</p>
-                : <p>We are not Open right now, please come back later.</p>}
-            </section>
-          )}
+        {isSushiOpen() && (
+          <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
+            <h1>Order Today!</h1>
+            <p class="text-2xl">
+              <a href="tel:+19287759323">(928) 775-9323</a>
+            </p>
+            <p>We are Open.</p>
+          </section>
+        )}
         <section class="max-w-screen-lg mx-auto p-8 pb-3 bg-white">
           <h1>Menu</h1>
         </section>

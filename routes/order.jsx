@@ -2,6 +2,12 @@ import { Head } from "$fresh/runtime.ts"
 import Layout from "@/components/Layout.jsx"
 import { isSushiOpen, isSushiOpenPhrase } from "@/utils/mod.js"
 
+export const handler = {
+  GET: (_req, ctx) => {
+    return ctx.render({ ...ctx.state, hits: parseInt(ctx.hits) })
+  },
+}
+
 export default function Showcase(props) {
   // console.log(isSushiOpen())
   return (
