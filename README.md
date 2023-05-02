@@ -1,5 +1,13 @@
 # fresh project
 
+### Setup
+
+Make a config.
+
+```
+cp .env.example .env
+```
+
 ### Usage
 
 Start the project:
