@@ -1,5 +1,5 @@
 import { tw } from "twind"
-import { apply, css, theme } from "twind/css"
+import { apply, css } from "twind/css"
 
 const menuStyle = css({
   "&": apply`max-w-screen-lg mx-auto p(8) space-y-4 bg-white`,

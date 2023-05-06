@@ -24,22 +24,6 @@ export default function Home(props) {
       </Head>
       <div class={tw`${homeStyles}`}></div>
       <section class="landing-page">
-        <div class="mx-auto">
-          <p class="my-8 text-dark">🍱 Welcome 🍣</p>
-          <div class="logo-parent">
-            <img class="logo" src={asset("/sushijexpress.jpg")} alt="" />
-          </div>
-          {
-            /* <h1 class="logo text-6xl text-dark font-bold">
-            <span class="font-brush text-8xl">Sushi</span>{" "}
-            <span class="text-red">J</span>{" "}
-            <span class="font-express">EXPRESS</span>
-          </h1> */
-          }
-          <p class="tagline">
-            おいしい寿司
-          </p>
-        </div>
       </section>
       <Layout data={props}>
         <section class="max-w-screen-lg mx-auto p-8 space-y-4 bg-white">
