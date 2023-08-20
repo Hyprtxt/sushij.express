@@ -1,5 +1,5 @@
 import { assertEquals } from "$std/testing/asserts.ts"
-import { freshPuppetTestWrapper } from "fresh_marionette"
+import { freshPuppetTestWrapper } from "@/test/wrapper.js"
 import { BASE_URL, NODE_ENV } from "@/utils/config.js"
 import { Status } from "$std/http/http_status.ts"
 
@@ -9,6 +9,10 @@ const puppet_config = NODE_ENV === "development"
 
 Deno.test(
   "Public Pages Testing",
+  {
+    sanitizeResources: false,
+    sanitizeOps: false,
+  },
   freshPuppetTestWrapper(puppet_config, async (t, page) => {
     await t.step("The homepage should work", async () => {
       const response = await page.goto(`${BASE_URL}`, {
