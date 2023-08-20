@@ -1,7 +1,7 @@
 import Header from "@/components/Header.jsx"
 import Footer from "@/components/Footer.jsx"
 import { tw } from "twind"
-import { DENO_ENV } from "@/utils/config.js"
+import { NODE_ENV } from "@/utils/config.js"
 import { globalStyles } from "@/utils/style.js"
 import { Head } from "$fresh/runtime.ts"
 
@@ -51,7 +51,7 @@ const Layout = ({ children, data = {} }) => (
     <section class={tw`flex justify-center`}>
       <Footer hits={data?.data?.hits} />
     </section>
-    {DENO_ENV === "development"
+    {NODE_ENV === "development"
       ? (
         <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white">
           <pre>{JSON.stringify(data, null, 2 )}</pre>

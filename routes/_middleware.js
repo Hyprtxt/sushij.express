@@ -1,7 +1,7 @@
 // routes/_middleware.js
 import { blue, cyan, green, magenta, red, yellow } from "$std/fmt/colors.ts"
 
-import { BASE_URL, DENO_ENV } from "@/utils/config.js"
+import { BASE_URL, NODE_ENV } from "@/utils/config.js"
 
 export async function handler(req, ctx) {
   // For Logging
@@ -17,7 +17,7 @@ export async function handler(req, ctx) {
     pathname.startsWith("/pages/")
   ) {
     ctx.BASE_URL = BASE_URL
-    ctx.DENO_ENV = DENO_ENV
+    ctx.NODE_ENV = NODE_ENV
     const kv = await Deno.openKv()
 
     const key = ["hits"]
