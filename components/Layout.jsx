@@ -49,7 +49,7 @@ const Layout = ({ children, data = {} }) => (
     </section>
     {children}
     <section class={tw`flex justify-center`}>
-      <Footer hits={data?.data?.hits} />
+      <Footer hits={data?.state?.hits} />
     </section>
     {NODE_ENV === "development"
       ? (

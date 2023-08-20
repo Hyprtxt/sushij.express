@@ -16,8 +16,6 @@ export async function handler(req, ctx) {
     withSession.includes(pathname) ||
     pathname.startsWith("/pages/")
   ) {
-    ctx.BASE_URL = BASE_URL
-    ctx.NODE_ENV = NODE_ENV
     const kv = await Deno.openKv()
 
     const key = ["hits"]
@@ -29,7 +27,7 @@ export async function handler(req, ctx) {
 
     // Read back this key.
     const v = await kv.get(key)
-    ctx.hits = v.value.value
+    ctx.state.hits = parseInt(v.value.value)
   }
   const resp = await ctx.next()
   const now = Date.now()
