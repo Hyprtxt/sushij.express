@@ -1,4 +1,4 @@
-import puppeteer from "https://deno.land/x/puppeteer@16.2.0/mod.ts"
+import puppeteer from "puppeteer"
 import { delay } from "$std/async/delay.ts"
 import { startFreshServer } from "$fresh/tests/test_utils.ts"
 

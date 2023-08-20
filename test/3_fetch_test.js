@@ -1,4 +1,4 @@
-import { assertEquals } from "$std/testing/asserts.ts"
+import { assertEquals } from "$std/assert/assert_exists.ts"
 import { freshTestWrapper } from "@/test/wrapper.js"
 import { BASE_URL } from "@/utils/config.js"
 import { Status } from "$std/http/http_status.ts"
