@@ -1,4 +1,4 @@
-import { assertEquals } from "$std/assert/assert_exists.ts"
+import { assertEquals } from "$std/assert/assert_equals.ts"
 import { freshPuppetTestWrapper } from "@/test/wrapper.js"
 import { BASE_URL, NODE_ENV } from "@/utils/config.js"
 import { Status } from "$std/http/http_status.ts"
