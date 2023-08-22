@@ -20,6 +20,6 @@ Deno.test(
       )
       assertEquals(requestStatus, Status.OK)
     })
-    // all done? Fresh will close gracefully
+    // all done? Fresh will close
   }),
 )
