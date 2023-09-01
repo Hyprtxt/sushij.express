@@ -3,7 +3,7 @@ import Layout from "@/components/Layout.jsx"
 import Menu from "@/components/Menu.jsx"
 import { tw } from "twind"
 import { homeStyles } from "@/utils/style.js"
-import { asset } from "$fresh/runtime.ts"
+// import { asset } from "$fresh/runtime.ts"
 import { isSushiOpen, isSushiOpenPhrase } from "@/utils/mod.js"
 
 export const handler = {
