@@ -21,8 +21,8 @@
   "imports": {
     "@/": "./",
     "$fresh/": "https://deno.land/x/fresh@1.4.2/",
-    "$std/": "https://deno.land/std@0.198.0/",
-    "$icons/": "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/",
+    "$std/": "https://deno.land/std@0.200.0/",
+    "$icons/": "https://deno.land/x/tabler_icons_tsx@0.0.4/tsx/",
     "fresh_seo": "https://deno.land/x/fresh_seo@0.2.1/mod.ts",
     "preact": "https://esm.sh/preact@10.15.1",
     "preact/": "https://esm.sh/preact@10.15.1/",
