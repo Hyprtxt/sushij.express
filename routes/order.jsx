@@ -26,6 +26,7 @@ export default function Showcase(props) {
           <p class="text-2xl">
             <a href="tel:+19287759323">(928) 775-9323</a>
           </p>
+          <p>Cash only please</p>
           <p>{isSushiOpenPhrase()}</p>
         </section>
       </Layout>
