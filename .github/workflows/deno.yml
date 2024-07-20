@@ -59,6 +59,7 @@ jobs:
           path: ${{ env.CHROMIUM_PATH }}
 
       - name: Run tests
+        run: deno test -A --unstable-kv
 
       - name: Build step
         run: deno task build
