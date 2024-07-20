@@ -35,7 +35,7 @@ export default function Home(props) {
           </p>
           {/* // Remember: Update Hours in Layout Schema and Functions too */}
           <p class="text-lg text-red">
-            We are open Tuesday - Saturday<br />Lunch: 11:00 am - 2:30
+            We are open Tuesday - Friday<br />Lunch: 11:00 am - 2:30
             pm<br />Dinner: 4:30 pm - 7:00 pm
           </p>
           <p>{isSushiOpenPhrase()}</p>

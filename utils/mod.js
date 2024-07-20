@@ -7,9 +7,13 @@ export const isSushiOpen = () => {
     timeZone: "America/Phoenix",
   }).replace(":", "")
   const dayOfWeek = date.getDay()
-  // console.log(current_time, dayOfWeek, "current_time")
+  console.log(current_time, dayOfWeek, "current_time")
   // is not sunday or monday
   if (dayOfWeek > 1) {
+    // is not saturday
+    if (dayOfWeek === 6) {
+      return false
+    }
     // is 1100 - 1900
     if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630
@@ -35,6 +39,10 @@ export const isSushiOpenPhrase = () => {
   // console.log(current_time, dayOfWeek, "current_time")
   // is not sunday or monday
   if (dayOfWeek > 1) {
+    // is not saturday
+    if (dayOfWeek === 6) {
+      return "Not open today"
+    }
     // is at least 1100
     if (current_time > 1059 && current_time < 1900) {
       // not 1430-1630
