@@ -4,7 +4,7 @@ import { startFreshServer } from "$fresh/tests/test_utils.ts"
 
 export const freshTestWrapper = (theTests) => async (t) => {
   const { serverProcess, lines } = await startFreshServer({
-    args: ["run", "-A", "--unstable", "./main.ts"],
+    args: ["run", "-A", "--unstable-kv", "./main.ts"],
   })
   await theTests(t)
   // Stop the Server
