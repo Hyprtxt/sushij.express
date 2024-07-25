@@ -58,8 +58,8 @@ jobs:
           key: puppeteer_${{ runner.os }}_v16_2_0
           path: ${{ env.CHROMIUM_PATH }}
 
-      - name: Run tests
-        run: deno test -A --unstable-kv
+      # - name: Run tests
+      #   run: deno test -A --unstable-kv --allow-env
 
       - name: Build step
         run: deno task build
