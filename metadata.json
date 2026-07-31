@@ -1,0 +1,6 @@
+{
+  "name": "Sushi J Express",
+  "description": "Sushi J Express website and online ordering menu app",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

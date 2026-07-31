@@ -1,3 +1,5 @@
+.next
 .env
 .env.*
 _fresh
+node_modules

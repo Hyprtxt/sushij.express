@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  color: #4f46e5;
+}
+a:visited {
+  color: #7c3aed;
+}
+a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+a:active {
+  color: #dc2626;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.75rem;
+}
+h1 a, h2 a, h3 a {
+  color: #111827;
+}
+h1 a:hover, h2 a:hover, h3 a:hover {
+  color: #111827;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
+.markdown a {
+  text-decoration: underline;
+}
+.markdown ul, .markdown ol {
+  margin-bottom: 0.75rem;
+}
+.markdown ul.mb-0 {
+  margin-bottom: 0;
+}
+.markdown ul li {
+  margin-left: 1.25rem;
+  list-style-type: disc;
+}
+.markdown ol li {
+  margin-left: 1.25rem;
+  list-style-type: decimal;
+}
+
+body {
+  position: relative;
+  background-color: #2563eb;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -20;
+  left: 0;
+  top: 0;
+  background: url("/background.webp") no-repeat center center;
+  background-size: cover;
+}
+
+.header-wrapper {
+  margin-top: 1.25rem;
+}
+
+.landing-page {
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  z-index: -10;
+}
+
+.home-styles {
+  /* Placeholder if needed */
+}
+
+.menu-item {
+  background-image: linear-gradient(to right, rgba(15, 15, 15, 1) 15%, rgba(15, 15, 15, 0) 0%);
+  background-position: center bottom 7px;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+}
+
+.menu-item span {
+  background-color: white;
+  line-height: 20px;
+}
+
+.list-circle {
+  list-style-type: circle;
+}
