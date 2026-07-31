@@ -1,9 +1,9 @@
-import { asset, Head } from "$fresh/runtime.ts"
+import { asset, Head } from "fresh/runtime"
 import Layout from "@/components/Layout.jsx"
 import Menu from "@/components/Menu.jsx"
 
 export const handler = {
-  GET: (_req, ctx) => {
+  GET: (ctx) => {
     return ctx.render({ ...ctx.state, hits: parseInt(ctx.hits) })
   },
 }

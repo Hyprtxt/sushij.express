@@ -1,4 +1,4 @@
-import { asset } from "$fresh/runtime.ts"
+import { asset } from "fresh/runtime"
 import { animation, apply, css, keyframes, theme } from "twind/css"
 
 export const globalStyles = css({

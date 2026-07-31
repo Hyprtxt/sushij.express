@@ -3,7 +3,7 @@ import Footer from "@/components/Footer.jsx"
 import { tw } from "twind"
 import { NODE_ENV } from "@/utils/config.js"
 import { globalStyles } from "@/utils/style.js"
-import { Head } from "$fresh/runtime.ts"
+import { Head } from "fresh/runtime"
 
 const SchemaORG = () => {
   const Schema = {

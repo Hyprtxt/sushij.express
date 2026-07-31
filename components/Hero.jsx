@@ -1,5 +1,5 @@
 // import IconChevronRight from "$icons/chevron-right.tsx"
-import { asset } from "$fresh/runtime.ts"
+import { asset } from "fresh/runtime"
 
 export default function Hero(props) {
   console.log(props)

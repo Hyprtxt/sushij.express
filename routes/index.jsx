@@ -1,4 +1,4 @@
-import { Head } from "$fresh/runtime.ts"
+import { Head } from "fresh/runtime"
 import Layout from "@/components/Layout.jsx"
 import Menu from "@/components/Menu.jsx"
 import { tw } from "twind"
@@ -7,7 +7,7 @@ import { homeStyles } from "@/utils/style.js"
 import { isSushiOpen, isSushiOpenPhrase } from "@/utils/mod.js"
 
 export const handler = {
-  GET: (_req, ctx) => {
+  GET: (ctx) => {
     return ctx.render({ ...ctx.state, hits: parseInt(ctx.hits) })
   },
 }

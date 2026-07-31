@@ -1,9 +1,9 @@
-import { Head } from "$fresh/runtime.ts"
+import { Head } from "fresh/runtime"
 import Layout from "@/components/Layout.jsx"
 import { isSushiOpen, isSushiOpenPhrase } from "@/utils/mod.js"
 
 export const handler = {
-  GET: (_req, ctx) => {
+  GET: (ctx) => {
     return ctx.render({ ...ctx.state, hits: parseInt(ctx.hits) })
   },
 }
